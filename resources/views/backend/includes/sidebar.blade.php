@@ -9,6 +9,11 @@
                     <i class="nav-icon icon-speedometer"></i> @lang('menus.backend.sidebar.dashboard')
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/files')) }}" href="{{ route('admin.files') }}">
+                    <i class="nav-icon icon-folder-alt"></i> Files
+                </a>
+            </li>
 
             <li class="nav-title">
                 @lang('menus.backend.sidebar.system')
